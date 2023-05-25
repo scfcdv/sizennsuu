@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>自然数ジェネレーター</title>
+<link rel="icon" href="favicon.ico">
+</head>
+<body>
+<input type="number" id="inputNumber" />
+<button onclick="showNaturalNumbers()">表示</button>
+<div id="naturalNumbers"></div>
+<script>
+function showNaturalNumbers() {
+var inputNumber = document.getElementById("inputNumber").value;
+document.getElementById("naturalNumbers").innerHTML = "";
+for (var i = 1; i <= inputNumber; i++) {
+document.getElementById("naturalNumbers").innerHTML += i + " ";}}
+</script>
+</body>
+</html>
